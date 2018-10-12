@@ -5,14 +5,11 @@ static int fun(int n)
 {
 if(n==0||n==1)
 {
-return 0;
+return n;
 }
-else if(n==2)
-{return 1;}
-else if(n>2)
-{return fun(n-1)+fun(n-2);}
-else
-{return -1;}
+
+return fun(n-1)+fun(n-2);
+
 }
 public static void main(String[] args)
 {
